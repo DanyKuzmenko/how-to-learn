@@ -156,9 +156,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 3;
-  padding-bottom: 100px;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 100px 0;
 }
 
 .table__cell {
@@ -300,10 +299,15 @@
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  /*явно прописал align-items, по совету старшего студента*/
   justify-content: space-between;
+  align-items: flex-start;
   flex-basis: 711px;
 }
 
@@ -319,6 +323,12 @@
   font-size: 18px;
   font-weight: normal;
   padding: 0;
+}
+
+.footer__column_content_info {
+  /*явно прописал align-items и justify-content, по совету старшего студента. Чтобы во всех браузерах отоброжалось корректно*/
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer__column-heading {
@@ -343,6 +353,12 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.footer__column_content_social {
+  /*явно прописал align-items и justify-content, по совету старшего студента. Чтобы во всех браузерах отоброжалось корректно*/
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .footer__social-icon {
