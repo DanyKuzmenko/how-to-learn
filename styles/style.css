@@ -59,7 +59,7 @@
   text-decoration: none;
 }
 
- .header__main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -80,7 +80,6 @@
 
 .description {
   padding-top: 100px;
-  background: #f2f2f2;
 }
 
 .two-columns {
@@ -99,7 +98,6 @@
   font-weight: normal;
   color: #2f80ed;
   margin: 0;
-  padding: 0;  /* не знаю нужно ли обнулять Padding*/
 }
 
 .two-columns__main-text {
@@ -115,7 +113,7 @@
   padding: 0;
 }
 
-.two-columns__paragraph_margin { /*не знаю, правильно ли было создавать дополнительный класс для создания отступа*/
+.two-columns__paragraph:nth-child(2) {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -128,7 +126,6 @@
 
 .digits {
   padding-top: 100px;
-  background-color: #f2f2f2;
 }
 
 .section-title {
@@ -139,6 +136,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  z-index: 2;
 }
 
 .section-subtitle {
@@ -158,21 +156,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
   z-index: 3;
-}
-
-.table_theme_light {
   padding-bottom: 100px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .table__cell {
   flex-direction: column;
-  margin-top: 60px; /*не знаю по БЭМ ли это*/
-  z-index: 2; 
-}
-
-.table__cell_theme_light {
-  margin-top: 60px;
+  margin: 60px 0 0 0;
+  z-index: 2;
   width: 250px;
+  padding: 0;
 }
 
 .table__heading {
@@ -193,14 +187,16 @@
   z-index: 2;   /*не знаю нужно ли было делать здесь z-index*/
 }
 
-.table__text_margin {
-  margin: 20px 0 0 0;         /*не знаю, можно ли делать так или это не по БЭМ*/
-}
-
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/feynman.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
 }
 
 .feynman__title {
@@ -218,19 +214,20 @@
 }
 
 .feynman__subtitle {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   z-index: 3;
   margin: 0;
   position: relative;
+  text-align: center;
 }
 
 .feynman__link {
   position: absolute;
-  height: 50%;
+  top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
@@ -238,16 +235,7 @@
   color: #2f80ed;
   margin: 0;
   z-index: 3;
-}
-
-.feynman__image {
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-image: url(../images/feynman.png);
-  z-index: 2;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -260,6 +248,7 @@
 .section-title_theme_dark {
   color: #fff;
   z-index: 2;
+  position: relative;
 }
 
 .section-subtitle_theme_dark {
@@ -303,7 +292,7 @@
   display: flex;
 }
 
-.columns {
+.footer__columns {
   padding: 60px 0 40px 0;
   display: flex;
   width: 90%;
@@ -311,7 +300,7 @@
   justify-content: space-between;
 }
 
-.column_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -360,18 +349,6 @@
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.footer__social-icon_facebook {
-  background-image: url(../images/facebook_color_white.svg);
-}
-
-.footer__social-icon_vk {
-  background-image: url(../images/vk_color_white.svg);
-}
-
-.footer__social-icon_instagram {
-  background-image: url(../images/instagram_color_white.svg);
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
