@@ -13,7 +13,64 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex; //сделал flex потому, что не title отображался вверху
   /* выше установили ограничения для секции */
+}
+
+.logo_place_header {
+  position: absolute;
+  width: 183 px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.subtitle_text {
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  margin: 0; /*не знаю нужно ли было обнулять margin */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 3;
+}
+
+.subtitle_link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+ .main-illustration_image {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  z-index: 2;
+}
+
+.square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
