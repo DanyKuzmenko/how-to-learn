@@ -1,0 +1,5 @@
+.footer__column_content_info {
+  /*явно прописал align-items и justify-content, по совету старшего студента. Чтобы во всех браузерах отоброжалось корректно*/
+  justify-content: flex-start;
+  align-items: flex-start;
+}
