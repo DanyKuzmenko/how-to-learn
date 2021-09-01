@@ -1,0 +1,5 @@
+.resources__logo-link {
+  text-decoration: none;
+  /*сбросил стиль для ссылок
+  Чтобы не оставлять пустой класс*/
+}

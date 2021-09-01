@@ -6,9 +6,10 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition-duration: .8s;
+  /*transition прописал в саму ссылку, чтобы наведение пропадало плавно*/
 }
 
 .footer__column-link:hover {
   opacity: .5;
-  transition-duration: .8s;
 }
