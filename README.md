@@ -9,6 +9,10 @@
 * Иногда используются мнемоники
 * Также используются анимации, фреймы, кейфреймы
 
+## **Ссылки:**
+Github: https://github.com/DanyKuzmenko  
+Сайт: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/
+
 # **First project**
 
 ## **Description**
@@ -20,3 +24,6 @@ The project uses technologies such as:
 * Sometimes is used mnemonics
 * Also it includes animations, frames, keyframes
 
+## **Links:**
+Github: https://github.com/DanyKuzmenko  
+Site: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/
