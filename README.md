@@ -11,7 +11,8 @@
 
 ## **Ссылки:**
 Github: https://github.com/DanyKuzmenko  
-Сайт: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/
+Сайт: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/  
+LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/
 
 # **First project**
 
@@ -26,4 +27,5 @@ The project uses technologies such as:
 
 ## **Links:**
 Github: https://github.com/DanyKuzmenko  
-Site: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/
+Site: https://how-to-learn-svwfkv77w-danykuzmenko.vercel.app/  
+LinkedIn: https://www.linkedin.com/in/daniil-kuzmenko-30a33822b/
